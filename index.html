@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yuvraj Tripathi | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: white;
+    }
+
+    nav {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 8%;
+      background: rgba(15, 23, 42, 0.95);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+    }
+
+    nav h1 {
+      color: #38bdf8;
+      font-size: 28px;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px;
+      background: linear-gradient(to right, #0f172a, #111827);
+    }
+
+    .hero-content h2 {
+      font-size: 60px;
+      margin-bottom: 10px;
+    }
+
+    .hero-content h2 span {
+      color: #38bdf8;
+    }
+
+    .hero-content h3 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #cbd5e1;
+    }
+
+    .hero-content p {
+      max-width: 750px;
+      margin: auto;
+      line-height: 1.8;
+      color: #cbd5e1;
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      margin: 10px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .primary-btn {
+      background: #38bdf8;
+      color: black;
+    }
+
+    .primary-btn:hover {
+      transform: scale(1.05);
+    }
+
+    .secondary-btn {
+      border: 2px solid #38bdf8;
+      color: #38bdf8;
+    }
+
+    .secondary-btn:hover {
+      background: #38bdf8;
+      color: black;
+    }
+
+    section {
+      padding: 80px 8%;
+    }
+
+    .section-title {
+      font-size: 40px;
+      margin-bottom: 40px;
+      text-align: center;
+      color: #38bdf8;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 25px;
+      border-radius: 15px;
+      transition: 0.4s;
+      border: 1px solid transparent;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      border-color: #38bdf8;
+    }
+
+    .card h3 {
+      margin-bottom: 15px;
+      color: #38bdf8;
+    }
+
+    .card p,
+    .card li {
+      color: #cbd5e1;
+      line-height: 1.7;
+    }
+
+    .card ul {
+      padding-left: 20px;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .skill {
+      background: #1e293b;
+      padding: 12px 20px;
+      border-radius: 8px;
+      border: 1px solid #38bdf8;
+    }
+
+    .contact-links {
+      text-align: center;
+    }
+
+    .contact-links a {
+      display: inline-block;
+      margin: 15px;
+      color: #38bdf8;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #111827;
+      color: #94a3b8;
+    }
+
+    @media(max-width: 768px) {
+      nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .hero-content h2 {
+        font-size: 42px;
+      }
+
+      .hero-content h3 {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <h1>Yuvraj</h1>
+
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#languages">Languages</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <h2>Hi, I'm <span>Yuvraj Tripathi</span></h2>
+
+      <h3>B.Tech CSE Student | Good knowledge of C++ | AI Enthusiast</h3>
+
+      <p>
+        Passionate Computer Science Engineering student with strong interest in
+        software development, automation, AI applications, and problem solving.
+        Solved 250+ LeetCode problems and actively improving Data Structures
+        and Algorithms skills.
+      </p>
+
+      <div class="buttons">
+
+        <a href="Untitled document (10).pdf" class="btn primary-btn" target="_blank">
+          Download Resume
+        </a>
+
+        <a href="#contact" class="btn secondary-btn">
+          Contact Me
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="about">
+
+    <h2 class="section-title">About Me</h2>
+
+    <div class="card">
+
+      <p>
+        I am a B.Tech Computer Science Engineering student at Maharana Pratap
+        Engineering College, Kanpur. I enjoy building software projects,
+        solving coding problems, learning AI technologies, and exploring web
+        development. I am actively looking to improve my development and
+        problem-solving skills through real-world projects.
+      </p>
+
+    </div>
+
+  </section>
+
+  <section id="skills">
+
+    <h2 class="section-title">Technical Skills</h2>
+
+    <div class="skills-list">
+
+      <div class="skill">Python</div>
+      <div class="skill">C</div>
+      <div class="skill">C++</div>
+      <div class="skill">Java</div>
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">Pandas</div>
+      <div class="skill">NumPy</div>
+      <div class="skill">Selenium</div>
+      <div class="skill">GitHub</div>
+      <div class="skill">MS Excel</div>
+      <div class="skill">Automation</div>
+
+    </div>
+
+  </section>
+
+  <section id="projects">
+
+    <h2 class="section-title">Projects</h2>
+
+    <div class="card-container">
+
+      <div class="card">
+
+        <h3>Task Automation with Python</h3>
+
+        <p>
+          Developed Python automation scripts using os, shutil, selenium,
+          requests, pandas, pyautogui, and datetime libraries to automate
+          repetitive tasks and improve workflow efficiency.
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <h3>Basic Chatbot</h3>
+
+        <p>
+          Built a rule-based chatbot using Python with predefined responses,
+          conversation handling, and introductory NLP concepts.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="certificates">
+
+    <h2 class="section-title">Certificates</h2>
+
+    <div class="card-container">
+
+      <div class="card">
+        <h3>TCS iON Career Edge</h3>
+        <p>Young Professional Certificate</p>
+      </div>
+
+      <div class="card">
+        <h3>Networking and Web Technology</h3>
+        <p>Technical learning certification</p>
+      </div>
+
+      <div class="card">
+        <h3>Data Visualization Using Python</h3>
+        <p>Python data visualization concepts</p>
+      </div>
+
+      <div class="card">
+        <h3>Gen AI Powered Data Analytics</h3>
+        <p>Job simulation certification</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="achievements">
+
+    <h2 class="section-title">Achievements</h2>
+
+    <div class="card">
+
+      <ul>
+
+        <li>Solved 250+ Problems on LeetCode</li>
+        <li>HackerRank 3-Star Coder</li>
+        <li>Completed HackerRank 30 Days of Code</li>
+        <li>Participated in AINCAT 2025 by Naukri.com</li>
+        <li>Participated in Techquezt #18</li>
+        <li>Participated in Brandquezt #19</li>
+
+      </ul>
+
+    </div>
+
+  </section>
+
+  <section id="languages">
+
+    <h2 class="section-title">Languages</h2>
+
+    <div class="card-container">
+
+      <div class="card">
+        <h3>English</h3>
+        <p>Professional Working Proficiency</p>
+      </div>
+
+      <div class="card">
+        <h3>Hindi</h3>
+        <p>Native Proficiency</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="contact">
+
+    <h2 class="section-title">Contact</h2>
+
+    <div class="contact-links">
+
+      <a href="mailto:panditkanpur3@gmail.com">
+        Email
+      </a>
+
+      <a href="https://github.com/yuvrajtripathi94" target="_blank">
+        GitHub
+      </a>
+
+      <a href="https://leetcode.com/u/yuvraj_Tripathi_94/" target="_blank">
+        LeetCode
+      </a>
+
+      <a href="https://www.linkedin.com/in/yuvraj-tripathi-5585aa351/" target="_blank">
+        LinkedIn
+      </a>
+
+    </div>
+
+  </section>
+
+  <footer>
+
+    <p>
+      © 2026 Yuvraj Tripathi | Portfolio Website
+    </p>
+
+  </footer>
+
+</body>
+
+</html>
